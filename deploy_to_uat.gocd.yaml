@@ -6,13 +6,13 @@ pipelines:
     environment_variables:
       NAMESPACE: uat
     secure_variables:
-      KUBE_TOKEN: # YOUR VALUE
+      KUBE_TOKEN: CHANGE_THIS
     materials:
       upstream:
         pipeline: build_and_package
         stage: build_stage
       SourceCodeRepo:
-        git: # YOUR VALUE
+        git: CHANGE_THIS
         shallow_clone: false
     stages:
     - traffic_light:

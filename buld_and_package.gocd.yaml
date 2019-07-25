@@ -4,10 +4,10 @@ pipelines:
     group: kubernetes
     display_order: 1
     environment_variables:
-      DOCKERHUB_USERNAME: # YOUR VALUE
+      DOCKERHUB_USERNAME: CHANGE_THIS
     materials:
       git:
-        git: # YOUR VALUE
+        git: CHANGE_THIS
         shallow_clone: true
     stages:
     - build_stage:

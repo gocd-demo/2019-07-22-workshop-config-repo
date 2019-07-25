@@ -6,7 +6,7 @@ pipelines:
     environment_variables:
       NAMESPACE: gocd
     secure_variables:
-      KUBE_TOKEN: # YOUR VALUE
+      KUBE_TOKEN: CHANGE_THIS
     materials:
       uat:
         pipeline: deploy_to_uat
@@ -15,7 +15,7 @@ pipelines:
         pipeline:  build_and_package
         stage: build_stage
       SourceCodeRepo:
-        git: # YOUR VALUE
+        git: CHANGE_THIS
         shallow_clone: false
     stages:
     - deploy_to_cluster:
